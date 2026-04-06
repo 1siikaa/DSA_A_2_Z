@@ -38,3 +38,16 @@ function mergeSort(arr, low, high) {
   return arr;
 }
 console.log(mergeSort([4, 2, 6, 0, 1, 5, 3, 7, 9, 2, 4, 5, 13], 0, 12));
+
+// Merge Sort Time Complexity
+
+// Time Complexity
+// Best Case = O(n log n)
+// Average Case = O(n log n)
+// Worst Case = O(n log n)
+
+// Space Complexity
+// Best Case = O(n)
+// Average Case = O(n)
+// Worst Case = O(n)
+// Recursion stack log n space.

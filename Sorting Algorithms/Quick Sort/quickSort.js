@@ -42,7 +42,7 @@ console.log(quickSort([3, 5, 6, 7, 2, 1, 4, 8, 1], 0, 8));
 // O(log n) - for dividing elements and then conquering it
 // Best Case - O(n) + O(log n) = O(n log n)
 // Average Case - O(n) + O(log n) = O(n log n)
-// Worst Case - O(n) + O(log n) = O(n log n)
+// Worst Case - O(n) + O(n) = O(n^2) - When pivot is always smallest or largest element.
 // Space complexity
 // O(1) - Auxiliary Space only
 // O (N) - Recursion stack space
