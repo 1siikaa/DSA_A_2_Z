@@ -5,7 +5,7 @@ function merge(arr, low, mid, high) {
   let right = mid + 1;
   let sortedArr = [];
   while (low <= mid && right <= high) {
-    if (arr[low] <= arr[right]) {
+    if (arr[low] >= arr[right]) {
       sortedArr.push(arr[low]);
       low++;
     } else {
@@ -13,7 +13,6 @@ function merge(arr, low, mid, high) {
       right++;
     }
   }
-
   while (low <= mid) {
     sortedArr.push(arr[low]);
     low++;
@@ -22,13 +21,16 @@ function merge(arr, low, mid, high) {
     sortedArr.push(arr[right]);
     right++;
   }
+
   for (let i = left; i <= high; i++) {
     arr[i] = sortedArr[i - left];
   }
 }
 
 function mergeSort(arr, low, high) {
-  if (low == high) return;
+  if (low === high) {
+    return;
+  }
   let mid = Math.floor((low + high) / 2);
   mergeSort(arr, low, mid);
   mergeSort(arr, mid + 1, high);

@@ -1,4 +1,4 @@
-// Take an element & place it in its current order.
+// Take an element & place it in its correct order.
 
 function insertionSortAsc(arr, n) {
   for (let i = 0; i <= n - 1; i++) {

@@ -34,3 +34,15 @@ function swap(arr, i, j) {
 }
 
 console.log(quickSort([3, 5, 6, 7, 2, 1, 4, 8, 1], 0, 8));
+
+
+// Time and Space Complexity
+// Time Complexity. O(n) + O(log n) = O(n log n)
+// O(n) - for iterating the whole array in findPartitionIndex function
+// O(log n) - for dividing elements and then conquering it
+// Best Case - O(n) + O(log n) = O(n log n)
+// Average Case - O(n) + O(log n) = O(n log n)
+// Worst Case - O(n) + O(log n) = O(n log n)
+// Space complexity
+// O(1) - Auxiliary Space only
+// O (N) - Recursion stack space
