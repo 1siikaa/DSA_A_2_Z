@@ -18,3 +18,15 @@ function sortInAsc(arr, n) {
 }
 
 console.log(sortInAsc([9, 0, 6, 4, 2, 5, 8, 9], 8));
+
+// Time Complexity
+// Best - O(n^2)
+// Average -O(n^2)
+// Worst - O(n²)
+
+
+
+// Space Complexity
+// Auxiliary Space - O(1)
+// Recursion Stack (avg) - O(1)
+// Recursion Stack (worst) - O(1)

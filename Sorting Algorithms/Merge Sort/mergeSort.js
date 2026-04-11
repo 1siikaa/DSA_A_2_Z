@@ -5,7 +5,7 @@ function merge(arr, low, mid, high) {
   let right = mid + 1;
   let sortedArr = [];
   while (low <= mid && right <= high) {
-    if (arr[low] <= arr[right]) {
+    if (arr[low] < arr[right]) {
       sortedArr.push(arr[low]);
       low++;
     } else {
